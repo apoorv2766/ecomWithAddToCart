@@ -7,10 +7,10 @@ function NavBar() {
   let { totalCount } = useCart();
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div className="container-fluid ">
+      <nav className="navbar navbar-expand-lg navbar-gray bg-danger position-sticky top-0 border-2">
+        <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Ecom
+            MyStore
           </Link>
           <button
             className="navbar-toggler"
@@ -50,7 +50,6 @@ function NavBar() {
                   <div className="position-relative">
                     <BsCartDash />
                     <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                      {" "}
                       {totalCount}
                     </span>
                   </div>

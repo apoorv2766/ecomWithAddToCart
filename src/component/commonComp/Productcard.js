@@ -8,7 +8,6 @@ function Productcard({ item }) {
       <div className="col-md-3 m-2">
         <div>
           <NavLink to={`/singlepage/${id}`}>
-            {" "}
             <img
               src={thumbnail}
               alt="abc"

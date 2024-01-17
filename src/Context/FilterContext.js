@@ -59,7 +59,7 @@ function FilterContext({ children }) {
 
   return (
     <filterContextValue.Provider value={{ ...state, updateSort,setFilterValue ,clearFilter}}>
-      {children}{" "}
+      {children}
     </filterContextValue.Provider>
   );
 }

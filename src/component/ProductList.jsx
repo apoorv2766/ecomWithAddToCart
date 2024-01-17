@@ -17,7 +17,7 @@ function ProductList() {
                 <SortingComp />
               </div>
               <div className="row">
-                {filterData.length == 0 && <h1>Connect To Internet</h1>}
+                {filterData.length == 0 && <h1>No Match Found</h1>}
                 {filterData.length > 0 &&
                   filterData.map((item) => {
                     return <Productcard item={item} key={item.id} />;
